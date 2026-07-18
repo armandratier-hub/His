@@ -1,0 +1,530 @@
+/* ============================================
+   Histoire de France - Thème (couleurs, polices, mode sombre)
+   ============================================ */
+
+/* Polices personnalisées */
+@font-face {
+    font-family: 'Fredoka One';
+    src: url('https://fonts.gstatic.com/s/fredokaone/v10/K88xR1ALx7XvPQvJ727xBjU3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm453WRhyzbi.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm453W1hyzbi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm453Wlhyw4.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5Q.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKOzY.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKOzY.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ============================================
+   Thème pour les cycles 1, 2 et 3
+   ============================================ */
+
+/* Cycle 1 (CP-CE2) - Ludique et coloré */
+.cycle1-theme {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --tertiary-color: #FFE66D;
+    --accent-color: #FF9F1C;
+    --dark-color: #2C3E50;
+    --light-color: #F8F9FA;
+    --bg-color: #FFF5E6;
+    --card-bg: #FFFFFF;
+    --text-color: #2C3E50;
+    --text-light: #777;
+}
+
+/* Cycle 2 (CE2-CM2) - Équilibre entre ludique et éducatif */
+.cycle2-theme {
+    --primary-color: #6A4C93;
+    --secondary-color: #FF6B6B;
+    --tertiary-color: #4ECDC4;
+    --accent-color: #FFE66D;
+    --dark-color: #2C3E50;
+    --light-color: #F8F9FA;
+    --bg-color: #FFFFFF;
+    --card-bg: #F8F9FA;
+    --text-color: #2C3E50;
+    --text-light: #555;
+}
+
+/* Cycle 3 (6ème-3ème) - Moderne et structuré */
+.cycle3-theme {
+    --primary-color: #0056B3;
+    --secondary-color: #FF6B6B;
+    --tertiary-color: #4ECDC4;
+    --accent-color: #FFD166;
+    --dark-color: #2C3E50;
+    --light-color: #E9ECEF;
+    --bg-color: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --text-color: #333;
+    --text-light: #666;
+}
+
+/* ============================================
+   Styles spécifiques pour les activités ludiques
+   ============================================ */
+
+/* Memory Game */
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.memory-card {
+    aspect-ratio: 1;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.memory-card:hover {
+    transform: scale(1.05);
+}
+
+.memory-card.flipped {
+    background-color: var(--accent-color);
+}
+
+.memory-card img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quiz-question {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.quiz-option {
+    background-color: var(--card-bg);
+    border: 2px solid var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-text);
+    color: var(--text-color);
+}
+
+.quiz-option:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(0, 86, 179, 0.1);
+}
+
+.quiz-option.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.quiz-option.correct {
+    background-color: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+}
+
+.quiz-option.incorrect {
+    background-color: var(--danger-color);
+    color: white;
+    border-color: var(--danger-color);
+}
+
+.quiz-feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: 600;
+}
+
+.quiz-feedback.correct {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: var(--success-color);
+}
+
+.quiz-feedback.incorrect {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: var(--danger-color);
+}
+
+/* Timeline Interactive */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1rem 2rem;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+    z-index: 2;
+    cursor: grab;
+    transition: var(--transition);
+}
+
+.timeline-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.timeline-item.left::before {
+    left: -10px;
+}
+
+.timeline-item.right::before {
+    right: -10px;
+}
+
+.timeline-date {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Jeu de rôle (Cycle 2) */
+.role-playing-game {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin: 1rem 0;
+}
+
+.rpg-scenario {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.rpg-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rpg-option {
+    background-color: var(--light-color);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-text);
+    color: var(--text-color);
+}
+
+.rpg-option:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Carte interactive */
+.interactive-map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.map-region {
+    position: absolute;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.map-region:hover {
+    fill: var(--primary-color);
+    opacity: 0.8;
+}
+
+.map-tooltip {
+    position: absolute;
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 0.8rem;
+    box-shadow: var(--shadow);
+    z-index: 10;
+    pointer-events: none;
+    display: none;
+}
+
+.map-tooltip h4 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.map-tooltip p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Coloriage (Cycle 1) */
+.coloring-page {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.coloring-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--light-color);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.coloring-tools {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.color-picker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--text-light);
+    transition: var(--transition);
+}
+
+.color-picker:hover {
+    transform: scale(1.1);
+    border-color: var(--primary-color);
+}
+
+.color-picker.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.3);
+}
+
+/* Débats (Cycle 3) */
+.debate-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.debate-topic {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.debate-arguments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.debate-side {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.debate-side h3 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.debate-side ul {
+    list-style: none;
+}
+
+.debate-side li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-color);
+    color: var(--text-light);
+}
+
+.debate-side li:last-child {
+    border-bottom: none;
+}
+
+/* Analyse de documents (Cycle 3) */
+.document-analysis {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.document-title {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.document-text {
+    background-color: var(--card-bg);
+    border: 1px solid var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.document-questions {
+    margin-top: 1.5rem;
+}
+
+.document-questions h4 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.document-questions ul {
+    list-style: none;
+}
+
+.document-questions li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+}
+
+/* ============================================
+   Responsive pour les activités
+   ============================================ */
+@media (max-width: 768px) {
+    .memory-game {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline-item {
+        padding: 1rem;
+    }
+    
+    .debate-arguments {
+        grid-template-columns: 1fr;
+    }
+    
+    .coloring-tools {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .memory-game {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .quiz-option {
+        padding: 0.8rem;
+    }
+}
