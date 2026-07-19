@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour les Historiens | Histoire de France</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="cycle3-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-landmark"></i>
+            <h1>Histoire de France - Historiens</h1>
+        </div>
+        <nav class="nav-menu">
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="../#historiens" class="active"><i class="fas fa-search"></i> Historiens</a></li>
+                <li><a href="../#adultes"><i class="fas fa-users"></i> Adultes</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </header>
+
+    <!-- Section principale -->
+    <section class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-search"></i> Pour les Historiens</h2>
+            <p>Sources primaires, bibliographies, études critiques et méthodologie de la recherche historique.</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="intro-container">
+            <div class="intro-text">
+                <h3>📜 Ressources pour les historiens</h3>
+                <p>
+                    Cette section est conçue pour les <strong>historiens</strong>, les <strong>étudiants en histoire</strong> 
+                    et les <strong>passionnés</strong> qui souhaitent approfondir leurs connaissances et accéder à des 
+                    <strong>sources primaires</strong>, des <strong>bibliographies</strong> et des <strong>études critiques</strong>.
+                </p>
+                <p>
+                    Vous y trouverez :
+                </p>
+                <ul>
+                    <li><strong>Des archives numérisées</strong> (textes, discours, traités).</li>
+                    <li><strong>Des bibliographies thématiques</strong> (ouvrages de référence, articles scientifiques).</li>
+                    <li><strong>Des études critiques</strong> (analyses d’historiens, débats historiographiques).</li>
+                    <li><strong>Des méthodologies</strong> (comment travailler sur des sources, rédiger un mémoire).</li>
+                </ul>
+                <p>
+                    <strong>Le saviez-tu ?</strong> Les <strong>archives nationales</strong> françaises conservent plus de 
+                    <strong>400 km linéaires</strong> de documents, du Moyen Âge à aujourd’hui !
+                </p>
+            </div>
+            <div class="intro-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Archives_Nationales_Paris.jpg/400px-Archives_Nationales_Paris.jpg" 
+                     alt="Archives Nationales de Paris" 
+                     onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                <p><em>Les Archives Nationales de Paris, un trésor pour les historiens</em></p>
+            </div>
+        </div>
+
+        <!-- Sous-sections -->
+        <div class="subsections">
+            <!-- Archives et sources primaires -->
+            <div class="subsection">
+                <h3><i class="fas fa-archive"></i> Archives et sources primaires</h3>
+                <div class="subsection-content">
+                    <div class="subsection-text">
+                        <p>
+                            Les <strong>sources primaires</strong> sont des documents <strong>contemporains</strong> d’un événement 
+                            ou d’une période. Elles sont <strong>indispensables</strong> pour le travail de l’historien.
+                        </p>
+                        
+                        <h4>📜 Les types de sources primaires</h4>
+                        <p>
+                            Il existe plusieurs types de sources primaires :
+                        </p>
+                        <ul>
+                            <li><strong>Les textes</strong> :
+                                <ul>
+                                    <li>Chroniques, récits historiques (ex: <em>Les Annales</em> de Tacite).</li>
+                                    <li>Discours, lettres (ex: <em>Discours de la méthode</em> de Descartes).</li>
+                                    <li>Lois, édits, traités (ex: <em>Edit de Nantes</em>, <em>Traité de Versailles</em>).</li>
+                                    <li>Journaux intimes, mémoires (ex: <em>Mémoires de guerre</em> de de Gaulle).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Les images</strong> :
+                                <ul>
+                                    <li>Peintures, dessins (ex: <em>La Liberté guidant le peuple</em> de Delacroix).</li>
+                                    <li>Gravures, caricatures (ex: caricatures de la Révolution française).</li>
+                                    <li>Photographies (ex: photos de la Première Guerre mondiale).</li>
+                                    <li>Cartes, plans (ex: <em>Carte de Cassini</em>).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Les objets</strong> :
+                                <ul>
+                                    <li>Armes, outils (ex: épées médiévales, outils préhistoriques).</li>
+                                    <li>Vêtements, bijoux (ex: costumes de la Renaissance).</li>
+                                    <li>Monnaies, médailles (ex: denier romain, franc à cheval).</li>
+                                    <li>Objets du quotidien (ex: poteries gauloises).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Les sources orales</strong> :
+                                <ul>
+                                    <li>Témoignages, entretiens (ex: témoignages de la Seconde Guerre mondiale).</li>
+                                    <li>Chansons, contes (ex: chansons de geste médiévales).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <h4>🏛️ Où trouver des sources primaires ?</h4>
+                        <p>
+                            Voici les principaux lieux et sites web pour accéder à des sources primaires :
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Lieu/Site</th>
+                                <th>Type de sources</th>
+                                <th>Période couverte</th>
+                                <th>Lien</th>
+                            </tr>
+                            <tr>
+                                <td>Archives Nationales (France)</td>
+                                <td>Textes, images, objets</td>
+                                <td>Moyen Âge à aujourd’hui</td>
+                                <td><a href="https://www.archives-nationales.culture.gouv.fr/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Gallica (BnF)</td>
+                                <td>Livres, journaux, images</td>
+                                <td>Antiquité à aujourd’hui</td>
+                                <td><a href="https://gallica.bnf.fr/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Wikimedia Commons</td>
+                                <td>Images, cartes, vidéos</td>
+                                <td>Toutes périodes</td>
+                                <td><a href="https://commons.wikimedia.org/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Europeana</td>
+                                <td>Textes, images, objets, sons</td>
+                                <td>Toutes périodes</td>
+                                <td><a href="https://www.europeana.eu/fr" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Internet Archive</td>
+                                <td>Livres, journaux, vidéos</td>
+                                <td>XIXe-XXIe siècle</td>
+                                <td><a href="https://archive.org/" target="_blank">Site web</a></td>
+                            </tr>
+                        </table>
+                        
+                        <h4>🔍 Exemples de sources primaires célèbres</h4>
+                        <p>
+                            Voici quelques exemples de sources primaires marquantes de l’Histoire de France :
+                        </p>
+                        <ul>
+                            <li><strong>Les <em>Mémoires</em> de Saint-Simon</strong> : Témoignage sur la cour de Louis XIV.</li>
+                            <li><strong>Le <em>Journal</em> de la Révolution française</strong> : Compte-rendu des événements de 1789.</li>
+                            <li><strong>Les <em>Lettres</em> de Napoléon</strong> : Correspondance avec ses généraux et sa famille.</li>
+                            <li><strong>L’<em>Appel du 18 Juin</em> de de Gaulle</strong> : Discours fondateur de la Résistance.</li>
+                            <li><strong>Les <em>Carnets</em> d’André Gide</strong> : Journal intime de l’écrivain.</li>
+                        </ul>
+                        
+                        <p>
+                            <strong>Le saviez-tu ?</strong> Le <strong>plus vieux document</strong> conservé aux Archives Nationales 
+                            est un <strong>parchemin du VIIe siècle</strong> !
+                        </p>
+                    </div>
+                    <div class="subsection-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Medieval_manuscript.jpg/400px-Medieval_manuscript.jpg" 
+                             alt="Manuscrit médiéval" 
+                             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bibliographies -->
+            <div class="subsection">
+                <h3><i class="fas fa-book"></i> Bibliographies</h3>
+                <div class="subsection-content">
+                    <div class="subsection-text">
+                        <p>
+                            Les <strong>bibliographies</strong> sont des listes d’<strong>ouvrages de référence</strong> 
+                            sur un thème donné. Elles permettent aux historiens de <strong>s’y retrouver</strong> 
+                            dans la production scientifique et de <strong>citer leurs sources</strong>.
+                        </p>
+                        
+                        <h4>📚 Méthodologie pour établir une bibliographie</h4>
+                        <p>
+                            Pour établir une bibliographie, il faut respecter certaines règles :
+                        </p>
+                        <ul>
+                            <li><strong>Classer les ouvrages</strong> : Par ordre alphabétique (nom de l’auteur) ou par thème.</li>
+                            <li><strong>Donner toutes les informations nécessaires</strong> :
+                                <ul>
+                                    <li>Nom et prénom de l’auteur.</li>
+                                    <li>Titre de l’ouvrage (en italique ou entre guillemets).</li>
+                                    <li>Éditeur.</li>
+                                    <li>Lieu de publication.</li>
+                                    <li>Date de publication.</li>
+                                    <li>Nombre de pages (optionnel).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Utiliser des normes</strong> :
+                                <ul>
+                                    <li>Norme <strong>AFNOR</strong> (France).</li>
+                                    <li>Norme <strong>APA</strong> (États-Unis).</li>
+                                    <li>Norme <strong>Chicago</strong> (États-Unis).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <h4>📖 Bibliographies thématiques</h4>
+                        <p>
+                            Voici quelques exemples de bibliographies thématiques :
+                        </p>
+                        
+                        <h5>La Révolution française</h5>
+                        <ul>
+                            <li><strong>Furet, François</strong>, <em>Penser la Révolution française</em>, Gallimard, Paris, 1978.</li>
+                            <li><strong>Soboul, Albert</strong>, <em>Histoire de la Révolution française</em>, PUF, Paris, 1962.</li>
+                            <li><strong>Vovelle, Michel</strong>, <em>La Révolution française : images et récits</em>, Messidor, Paris, 1986.</li>
+                            <li><strong>Hunt, Lynn</strong>, <em>Politics, Culture, and Class in the French Revolution</em>, University of California Press, Berkeley, 1984.</li>
+                        </ul>
+                        
+                        <h5>La Seconde Guerre mondiale</h5>
+                        <ul>
+                            <li><strong>Paxton, Robert O.</strong>, <em>La France de Vichy</em>, Seuil, Paris, 1973.</li>
+                            <li><strong>Wieviorka, Olivier</strong>, <em>La Mémoire désunie : le récit, l’historien et la mémoire</em>, Seuil, Paris, 2013.</li>
+                            <li><strong>Azéma, Jean-Pierre</strong>, <em>1940-1944, les années noires</em>, Perrin, Paris, 2012.</li>
+                            <li><strong>Burlein, Agnès</strong>, <em>La Résistance</em>, Perrin, Paris, 2019.</li>
+                        </ul>
+                        
+                        <h5>L’Histoire des femmes</h5>
+                        <ul>
+                            <li><strong>Perrot, Michelle</strong>, <em>Les Femmes ou les Silences de l’Histoire</em>, Flammarion, Paris, 1998.</li>
+                            <li><strong>Dubois, Françoise</strong>, <em>Le Féminisme</em>, PUF, Paris, 2017.</li>
+                            <li><strong>Badinter, Élisabeth</strong>, <em>L’Amour en plus : histoire de l’affectivité familiale (XVIIIe-XXe siècle)</em>, Flammarion, Paris, 1980.</li>
+                            <li><strong>Delphy, Christine</strong>, <em>Close to Home: A Materialist Analysis of Women’s Oppression</em>, Hutchinson, Londres, 1984.</li>
+                        </ul>
+                        
+                        <h5>L’Histoire coloniale</h5>
+                        <ul>
+                            <li><strong>Ferro, Marc</strong>, <em>Histoire des colonisations : des conquêtes aux indépendances, XIIIe-XXe siècle</em>, Seuil, Paris, 1994.</li>
+                            <li><strong>Coquery-Vidrovitch, Catherine</strong>, <em>Enjeux politiques de l’histoire coloniale</em>, EHESS, Paris, 2009.</li>
+                            <li><strong>Bancel, Nicolas (dir.)</strong>, <em>La Fracture coloniale : la société française a-t-elle fini avec le colonialisme ?</em>, La Découverte, Paris, 2005.</li>
+                            <li><strong>Stora, Benjamin</strong>, <em>La Guerre des mémoires : la France face à son passé colonial</em>, Mille et une nuits, Paris, 2007.</li>
+                        </ul>
+                        
+                        <p>
+                            <strong>Le saviez-tu ?</strong> La <strong>Bibliothèque nationale de France (BnF)</strong> 
+                            conserve plus de <strong>40 millions de documents</strong>, dont des manuscrits médiévaux, 
+                            des incunables et des livres rares.
+                        </p>
+                    </div>
+                    <div class="subsection-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Library_books.jpg/400px-Library_books.jpg" 
+                             alt="Bibliothèque" 
+                             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Études critiques et historiographie -->
+            <div class="subsection">
+                <h3><i class="fas fa-microscope"></i> Études critiques et historiographie</h3>
+                <div class="subsection-content">
+                    <div class="subsection-text">
+                        <p>
+                            L’<strong>historiographie</strong> est l’étude de la manière dont l’Histoire est écrite et interprétée. 
+                            Elle permet de comprendre comment les <strong>courants historiques</strong> ont évolué 
+                            et comment les <strong>interprétations du passé</strong> changent avec le temps.
+                        </p>
+                        
+                        <h4>📜 Les courants historiographiques</h4>
+                        <p>
+                            Plusieurs courants historiographiques se sont succédé en France :
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Courant</th>
+                                <th>Période</th>
+                                <th>Caractéristiques</th>
+                                <th>Représentants</th>
+                            </tr>
+                            <tr>
+                                <td>École méthodique</td>
+                                <td>Fin XIXe - début XXe</td>
+                                <td>Rigueur scientifique, travail sur les archives.</td>
+                                <td>Langlois, Seignobos</td>
+                            </tr>
+                            <tr>
+                                <td>École des Annales</td>
+                                <td>Années 1930-1980</td>
+                                <td>Histoire totale, interdisciplinarité, longue durée.</td>
+                                <td>Bloch, Febvre, Braudel</td>
+                            </tr>
+                            <tr>
+                                <td>Nouvelle Histoire</td>
+                                <td>Années 1970-1990</td>
+                                <td>Histoire des mentalités, des sensibilités, du quotidien.</td>
+                                <td>Le Goff, Duby, Ariès</td>
+                            </tr>
+                            <tr>
+                                <td>Histoire sociale</td>
+                                <td>Années 1960-1980</td>
+                                <td>Étude des structures sociales, des classes, des mouvements sociaux.</td>
+                                <td>Labrousse, Soboul</td>
+                            </tr>
+                            <tr>
+                                <td>Histoire culturelle</td>
+                                <td>Années 1980-2000</td>
+                                <td>Étude des représentations, des symboles, des pratiques culturelles.</td>
+                                <td>Chartier, Vovelle</td>
+                            </tr>
+                            <tr>
+                                <td>Histoire globale</td>
+                                <td>Années 2000-présent</td>
+                                <td>Approche transnationale, connexions entre les sociétés.</td>
+                                <td>Bayly, Subrahmanyam</td>
+                            </tr>
+                        </table>
+                        
+                        <h4>🔍 Les débats historiographiques</h4>
+                        <p>
+                            Plusieurs <strong>débats</strong> ont marqué l’historiographie française :
+                        </p>
+                        <ul>
+                            <li><strong>Le débat sur la Révolution française</strong> :
+                                <ul>
+                                    <li><strong>Approche marxiste</strong> (Soboul) : La Révolution comme lutte des classes.</li>
+                                    <li><strong>Approche libérale</strong> (Furet) : La Révolution comme accident, dérapage.</li>
+                                    <li><strong>Approche culturelle</strong> (Vovelle) : La Révolution comme changement des mentalités.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Le débat sur Vichy</strong> :
+                                <ul>
+                                    <li><strong>Thèse de la "parenthèse"</strong> (De Gaulle) : Vichy comme accident de l’Histoire.</li>
+                                    <li><strong>Thèse de la continuité</strong> (Paxton) : Vichy comme révélateur des failles de la société française.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Le débat sur la colonisation</strong> :
+                                <ul>
+                                    <li><strong>Approche colonialiste</strong> : La colonisation comme mission civilisatrice.</li>
+                                    <li><strong>Approche anticolonialiste</strong> : La colonisation comme exploitation et oppression.</li>
+                                    <li><strong>Approche postcoloniale</strong> : Étude des héritages de la colonisation.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <h4>📝 Méthodologie de la recherche historique</h4>
+                        <p>
+                            Pour mener une recherche historique, il faut suivre plusieurs étapes :
+                        </p>
+                        <ol>
+                            <li><strong>Choisir un sujet</strong> : Définir une problématique claire et précise.</li>
+                            <li><strong>Faire un état de l’art</strong> : Lire les travaux existants sur le sujet.</li>
+                            <li><strong>Trouver des sources</strong> : Archives, bibliothèques, bases de données en ligne.</li>
+                            <li><strong>Analyser les sources</strong> : Critique externe (authenticité) et interne (contenu).</li>
+                            <li><strong>Croiser les sources</strong> : Confronter les informations pour éviter les biais.</li>
+                            <li><strong>Rédiger</strong> : Structurer son travail (introduction, développement, conclusion).</li>
+                            <li><strong>Citer ses sources</strong> : Respecter les normes bibliographiques.</li>
+                        </ol>
+                        
+                        <p>
+                            <strong>Le saviez-tu ?</strong> L’<strong>École des Annales</strong>, fondée par 
+                            <strong>Marc Bloch</strong> et <strong>Lucien Febvre</strong> en 1929, a révolutionné 
+                            l’historiographie en introduisant l’<strong>interdisciplinarité</strong> et l’étude des 
+                            <strong>longues durées</strong>.
+                        </p>
+                    </div>
+                    <div class="subsection-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Marc_Bloch.jpg/400px-Marc_Bloch.jpg" 
+                             alt="Marc Bloch, fondateur de l'École des Annales" 
+                             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Méthodologie et outils -->
+            <div class="subsection">
+                <h3><i class="fas fa-tools"></i> Méthodologie et outils pour les historiens</h3>
+                <div class="subsection-content">
+                    <div class="subsection-text">
+                        <p>
+                            Voici quelques <strong>outils</strong> et <strong>méthodes</strong> pour faciliter le travail 
+                            de l’historien, amateur ou professionnel.
+                        </p>
+                        
+                        <h4>🔧 Les outils numériques</h4>
+                        <p>
+                            Les <strong>outils numériques</strong> ont révolutionné la recherche historique :
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Outil</th>
+                                <th>Description</th>
+                                <th>Lien</th>
+                            </tr>
+                            <tr>
+                                <td>Zotero</td>
+                                <td>Gestionnaire de bibliographie (gratuit et open source).</td>
+                                <td><a href="https://www.zotero.org/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mendeley</td>
+                                <td>Gestionnaire de bibliographie et réseau social académique.</td>
+                                <td><a href="https://www.mendeley.com/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Evernote</td>
+                                <td>Outil de prise de notes et d’organisation.</td>
+                                <td><a href="https://evernote.com/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Notion</td>
+                                <td>Outil de gestion de projets et de prise de notes.</td>
+                                <td><a href="https://www.notion.so/" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Obsidian</td>
+                                <td>Outil de prise de notes en Markdown avec liens internes.</td>
+                                <td><a href="https://obsidian.md/" target="_blank">Site web</a></td>
+                            </tr>
+                        </table>
+                        
+                        <h4>📊 Les méthodes de travail</h4>
+                        <p>
+                            Voici quelques <strong>méthodes</strong> pour travailler efficacement :
+                        </p>
+                        <ul>
+                            <li><strong>La fiche de lecture</strong> : Résumer un ouvrage en notant ses thèses, ses arguments et ses sources.</li>
+                            <li><strong>La carte mentale</strong> : Organiser ses idées de manière visuelle.</li>
+                            <li><strong>Le tableau comparatif</strong> : Comparer deux événements, deux personnages, deux interprétations.</li>
+                            <li><strong>La frise chronologique</strong> : Situer les événements dans le temps.</li>
+                            <li><strong>L’analyse de document</strong> : Étudier un texte ou une image en détail (contexte, auteur, message).</li>
+                        </ul>
+                        
+                        <h4>📝 Les normes de rédaction</h4>
+                        <p>
+                            Pour rédiger un travail historique, il faut respecter certaines normes :
+                        </p>
+                        <ul>
+                            <li><strong>Les citations</strong> :
+                                <ul>
+                                    <li>Utiliser des <strong>guillemets</strong> pour les citations courtes.</li>
+                                    <li>Mettre en <strong>retrait</strong> les citations longues (plus de 3 lignes).</li>
+                                    <li>Indiquer la <strong>source</strong> (auteur, titre, page).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Les notes de bas de page</strong> :
+                                <ul>
+                                    <li>Numérotées de manière <strong>séquentielle</strong>.</li>
+                                    <li>Placées en <strong>bas de page</strong> ou en <strong>fin de document</strong>.</li>
+                                    <li>Utilisées pour les <strong>citations</strong> et les <strong>renvois bibliographiques</strong>.</li>
+                                </ul>
+                            </li>
+                            <li><strong>La bibliographie</strong> :
+                                <ul>
+                                    <li>Classée par <strong>ordre alphabétique</strong> (nom de l’auteur).</li>
+                                    <li>Présentée selon une <strong>norme</strong> (AFNOR, APA, Chicago).</li>
+                                    <li>Complète : <strong>auteur, titre, éditeur, lieu, date</strong>.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <h4>🎓 Les revues scientifiques</h4>
+                        <p>
+                            Voici quelques <strong>revues scientifiques</strong> en histoire :
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Revue</th>
+                                <th>Spécialité</th>
+                                <th>Éditeur</th>
+                                <th>Lien</th>
+                            </tr>
+                            <tr>
+                                <td>Annales. Histoire, Sciences Sociales</td>
+                                <td>Histoire totale, interdisciplinarité</td>
+                                <td>EHESS</td>
+                                <td><a href="https://www.cairn.info/revue-annales.htm" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Revue historique</td>
+                                <td>Histoire générale</td>
+                                <td>PUF</td>
+                                <td><a href="https://www.cairn.info/revue-historique.htm" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Vingtième Siècle. Revue d’histoire</td>
+                                <td>Histoire du XXe siècle</td>
+                                <td>Sciences Po</td>
+                                <td><a href="https://www.cairn.info/revue-vingtieme-siecle.htm" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Le Moyen Âge</td>
+                                <td>Histoire médiévale</td>
+                                <td>De Boeck Supérieur</td>
+                                <td><a href="https://www.cairn.info/revue-le-moyen-age.htm" target="_blank">Site web</a></td>
+                            </tr>
+                            <tr>
+                                <td>Histoire, Économie & Société</td>
+                                <td>Histoire économique et sociale</td>
+                                <td>Armand Colin</td>
+                                <td><a href="https://www.cairn.info/revue-histoire-economie-et-societe.htm" target="_blank">Site web</a></td>
+                            </tr>
+                        </table>
+                        
+                        <p>
+                            <strong>Le saviez-tu ?</strong> La revue <strong>Annales. Histoire, Sciences Sociales</strong>, 
+                            fondée en <strong>1929</strong> par <strong>Marc Bloch</strong> et <strong>Lucien Febvre</strong>, 
+                            est l’une des <strong>revues d’histoire les plus prestigieuses</strong> au monde.
+                        </p>
+                    </div>
+                    <div class="subsection-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Historian_at_work.jpg/400px-Historian_at_work.jpg" 
+                             alt="Historien au travail" 
+                             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cours en PDF -->
+        <div class="section-activities">
+            <h3><i class="fas fa-file-pdf"></i> Ressources en PDF pour les Historiens</h3>
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <i class="fas fa-archive"></i>
+                    <h3>Archives et sources primaires</h3>
+                    <p>Guide pour trouver et analyser des sources primaires.</p>
+                    <a href="../cours/Historiens/Archives_et_sources_primaires.md" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Télécharger
+                    </a>
+                </div>
+                <div class="pdf-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Bibliographies thématiques</h3>
+                    <p>Bibliographies sur la Révolution française, la Seconde Guerre mondiale, etc.</p>
+                    <a href="../cours/Historiens/Bibliographies_thematiques.md" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Télécharger
+                    </a>
+                </div>
+                <div class="pdf-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Études critiques et historiographie</h3>
+                    <p>Courants historiographiques, débats, méthodologie de la recherche.</p>
+                    <a href="../cours/Historiens/Etudes_critiques_et_historiographie.md" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Télécharger
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galerie d'images -->
+        <div class="gallery-section">
+            <h3><i class="fas fa-images"></i> Galerie d'images</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Archives_Nationales_Paris.jpg/300px-Archives_Nationales_Paris.jpg" 
+                         alt="Archives Nationales" 
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    <p>Archives Nationales</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Medieval_manuscript.jpg/300px-Medieval_manuscript.jpg" 
+                         alt="Manuscrit médiéval" 
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    <p>Manuscrit médiéval</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Library_books.jpg/300px-Library_books.jpg" 
+                         alt="Bibliothèque" 
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    <p>Bibliothèque</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Marc_Bloch.jpg/300px-Marc_Bloch.jpg" 
+                         alt="Marc Bloch" 
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    <p>Marc Bloch</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Historian_at_work.jpg/300px-Historian_at_work.jpg" 
+                         alt="Historien au travail" 
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    <p>Historien au travail</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/France_location_map-Regions_and_departements-2016.svg/300px-France_location_map-Regions_and_departements-2016.svg.png" 
+                         alt="Carte de France" 
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png'">
+                    <p>Carte de France</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vidéos éducatives -->
+        <div class="videos-section">
+            <h3><i class="fas fa-video"></i> Vidéos pour aller plus loin</h3>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/1Jz5lzJQlJI" 
+                            title="Il était une fois... l'Homme - Le métier d'historien" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                    <p><strong>Il était une fois... l'Homme</strong> : Le métier d'historien</p>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/6R9Hgtk23vo" 
+                            title="C'est pas sorcier - Les archives" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                    <p><strong>C'est pas sorcier</strong> : Les archives</p>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/8JzXyBQqoI4" 
+                            title="C'est pas sorcier - L'historiographie" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                    <p><strong>C'est pas sorcier</strong> : L'historiographie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-landmark"></i>
+                <h3>Histoire de France - Historiens</h3>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Accueil</a>
+                <a href="../#historiens">Historiens</a>
+                <a href="../#adultes">Adultes</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Histoire de France | <a href="../LICENSE">Licence CC-BY-SA 4.0</a></p>
+        </div>
+    </footer>
+
+    <!-- Modal pour les activités -->
+    <div id="activityModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div id="activityContent"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/data.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+        // Initialiser le thème et la navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            const currentTheme = localStorage.getItem('theme') || 
+                                 (prefersDarkScheme.matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            
+            if (themeToggle) {
+                themeToggle.innerHTML = currentTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+                themeToggle.addEventListener('click', () => {
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+                });
+            }
+            
+            // Initialiser la navigation
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (navToggle && navLinks) {
+                navToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            // Initialiser les modales
+            const modal = document.getElementById('activityModal');
+            const closeModal = document.getElementById('closeModal');
+            if (closeModal) {
+                closeModal.addEventListener('click', () => {
+                    modal.classList.remove('active');
+                });
+            }
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
